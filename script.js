@@ -62,7 +62,7 @@ function downloadQRImage() {
   // Create a temporary anchor element to trigger the download
   const link = document.createElement("a");
   link.href = imageURL;
-  //   link.setAttribute("target", "_blank");
+  link.setAttribute("target", "_blank");
   link.download = "qrcode.png";
   link.click();
 }
