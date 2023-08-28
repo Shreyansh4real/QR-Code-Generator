@@ -64,7 +64,8 @@ function downloadQRImage() {
   link.href = imageURL;
   link.setAttribute("target", "_blank");
   link.download = "qrcode.png";
-  link.click();
+  // link.click();
+  window.open(imageURL, "_blank")
 }
 
 // Function to show the download button
